@@ -6,6 +6,10 @@ html {
     scroll-behavior: smooth;
     font-family: consolas;
 }
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 .main_content {
     display: block;
@@ -18,11 +22,12 @@ html {
 }
 .content {
     text-align: center;
-    font-size: medium;
+    font-size: large;
     padding-left: 25px;
     padding-right: 25px;
 }
 h2 {
+    font-size: xx-large;
     text-align: center;
 }
 hr.main_content_bar {
@@ -35,6 +40,47 @@ hr.main_content_bar {
     position: relative;
     left: 25%;
     right: 25%;
+}
+.project_table {
+    width: 95%;
+    table-layout: fixed;
+    margin: auto;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.project_table tr {
+    height: 3in;
+}
+.project_table tr:hover {
+    background: #34548b45;
+    outline: none;
+    cursor: pointer;
+  }
+.project_table td {
+    padding: 20px;
+    padding: 20px;
+    border-bottom: solid black;
+    border-top: solid black;
+}
+.project_table_image_col {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: inherit;
+    width: 60%;
+}
+.project_table_desc_col {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.project_desc_content {
+    font-size: medium;
+}
+.project_img {
+    width: auto;
+    height: auto;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
 }
 
 .topnav {
