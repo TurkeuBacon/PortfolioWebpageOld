@@ -55,7 +55,12 @@ hr.main_content_bar {
     background: #34548b45;
     outline: none;
     cursor: pointer;
-  }
+}
+.project_table tr:active {
+    background: #5e46e685;
+    outline: none;
+    cursor: pointer;
+}
 .project_table td {
     padding: 20px;
     padding: 20px;
