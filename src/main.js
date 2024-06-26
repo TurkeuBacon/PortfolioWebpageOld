@@ -1,4 +1,5 @@
 const MAX_PARENT_SEARCH_ITERATIONS = 10;
+const BASE = [location.protocol, "//", location.host].join('');
 
 document.body.onclick = function(e) {
     let clicked = e.target;
@@ -20,5 +21,5 @@ document.body.onclick = function(e) {
 
 function handleProjectClick(projectId) {
     console.log(projectId);
-    window.location.href = "./project_pages/" + projectId + ".html";
+    window.location.href = BASE + "/project_pages/" + projectId + ".html";
 }
