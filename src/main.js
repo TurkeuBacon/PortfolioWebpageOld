@@ -21,5 +21,6 @@ document.body.onclick = function(e) {
 
 function handleProjectClick(projectId) {
     console.log(projectId);
-    window.location.href = BASE + "/PortfolioWebpage/project_pages/" + projectId + ".html";
+    console.log(BASE + "/PortfolioWebpage/");
+    // window.location.href = BASE + "/PortfolioWebpage/project_pages/" + projectId + ".html";
 }
