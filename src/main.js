@@ -1,5 +1,12 @@
 const MAX_PARENT_SEARCH_ITERATIONS = 10;
 const BASE = [location.protocol, "//", location.host].join('');
+console.log("BASE: " + BASE);
+if(BASE == "https://turkeubacon.github.io") {
+    console.log("GITHUB");
+    BASE += "/PortfolioWebpage";
+} else {
+    console.log("LOCAL");
+}
 
 document.body.onclick = function(e) {
     let clicked = e.target;
@@ -22,6 +29,5 @@ document.body.onclick = function(e) {
 function handleProjectClick(projectId) {
     console.log(projectId);
     console.log(BASE);
-    console.log(BASE + "/PortfolioWebpage/");
-    // window.location.href = BASE + "/PortfolioWebpage/project_pages/" + projectId + ".html";
+    window.location.href = BASE + "/project_pages/" + projectId + ".html";
 }
