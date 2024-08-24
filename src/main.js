@@ -1,5 +1,5 @@
 const MAX_PARENT_SEARCH_ITERATIONS = 10;
-const BASE = [location.protocol, "//", location.host].join('');
+let BASE = [location.protocol, "//", location.host].join('');
 console.log("BASE: " + BASE);
 if(BASE == "https://turkeubacon.github.io") {
     console.log("GITHUB");
