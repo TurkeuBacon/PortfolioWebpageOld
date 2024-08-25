@@ -6,47 +6,24 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Gabriel Bacon Portfolio</title>
     <link rel="icon" type="image/x-icon" href="images/Richard.ico">
+    <script src="libs/jqueryDev.js"></script>
+    <script src="src/components/project_card.js" defer></script>
 </head>
 <body>
     <div class="topnav">
-        <a class="active" href="#about">About</a>
+        <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-        <a href="blog.html">Blog</a>
+        <!-- <a href="blog.html">Blog</a> -->
     </div>
     <div id="main_content" class="main_content">
         <h2  id="about">Gabriel Bacon</h2>
         <img src="./images/GabrielGradPic.jpg" width="50%" alt="Gabriel Bacon Image" class="default_image">
-        <p class="content">
-            Hello! My name is Gabriel Bacon. I'm a fourth year Computer Science: Computer Game Design Major at UCSC. [Write More] AAAAAAAAAAAAA
-        </p>
+        <p id="about_text" class="content">[ERROR]</p>
         <hr class="main_content_bar">
         <h2 id="projects">Projects</h2>
         <table class="project_table">
-            <tbody>
-                <tr id="project_id-duck">
-                    <td class="project_table_image_col">
-                        <img src="images/Duck.jpg" class="project_img">
-                    </td>
-                    <td class="project_table_desc_col">
-                        <h3>Duck</h3>
-                        <p class="project_desc_content">
-                            This is a really cool duck I saw in my yard in Santa Cruz. I fed him a blueberry.
-                        </p>
-                    </td>
-                </tr>
-                <tr id="project_id-richard">
-                    <td class="project_table_image_col">
-                        <img src="images/RichardScaled.png" class="project_img">
-                    </td>
-                    <td class="project_table_desc_col">
-                        <h3>Richard</h3>
-                        <p class="project_desc_content">
-                            This is pixelart I made of my best boy Richard. He's super cool and acts as my mascot.
-                        </p>
-                    </td>
-                </tr>
-            </tbody>
+            <tbody id="projects_table_body"></tbody>
         </table>
         <br>
         <hr class="main_content_bar">

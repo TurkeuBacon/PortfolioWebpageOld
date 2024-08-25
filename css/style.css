@@ -64,8 +64,8 @@ hr.main_content_bar {
 .project_table td {
     padding: 20px;
     padding: 20px;
-    border-bottom: solid black;
-    border-top: solid black;
+    /* border-bottom: solid black; */
+    /* border-top: solid black; */
 }
 .project_table_image_col {
     border-top-left-radius: 25px;
