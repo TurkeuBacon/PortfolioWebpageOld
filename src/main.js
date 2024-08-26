@@ -1,14 +1,15 @@
-let BASE = [location.protocol, "//", location.host].join('');
-if(BASE == "https://turkeubacon.github.io") {
-    console.log("GITHUB");
-    BASE += "/PortfolioWebpage";
-} else {
-    console.log("LOCAL");
-}
+
 $(document).ready(function() {
+    let BASE = [location.protocol, "//", location.host].join('');
+    if(BASE == "https://turkeubacon.github.io") {
+        console.log("GITHUB");
+        BASE += "/PortfolioWebpage";
+    } else {
+        console.log("LOCAL");
+    }
     try {
         $.ajax({
-            url : "../text_files/about.txt",
+            url : BASE + "/text_files/about.txt",
             success : function (data) {
                 const lines = data.split('\n')
                 let aboutHTML = "";
@@ -23,7 +24,7 @@ $(document).ready(function() {
         document.getElementById("about_text").innerHTML = error;
     }
     
-    fetch('../project_pages/projectCards.json')
+    fetch(BASE + '/project_pages/projectCards.json')
         .then((response) => response.json())
         .then((json) => {
             let cards = json.cards;
