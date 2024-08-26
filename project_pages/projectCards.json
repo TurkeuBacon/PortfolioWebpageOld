@@ -1,0 +1,16 @@
+{
+    "cards": [
+        {
+            "id": "duck",
+            "title": "Duck",
+            "desc": "This is a really cool duck I saw in my yard in Santa Cruz. I fed him a blueberry.",
+            "img_src": "./images/Duck.jpg"
+        },
+        {
+            "id": "richard",
+            "title": "Richard",
+            "desc": "This is pixelart I made of my best boy Richard. He's super cool and acts as my mascot.",
+            "img_src": "./images/RichardScaled.png"
+        }
+    ]
+}
