@@ -1,6 +1,6 @@
 body {
     margin-top: 50px;
-    background-color: rgb(42, 72, 131);
+    background-color: #2a4883;
 }
 html {
     scroll-behavior: smooth;
@@ -14,17 +14,24 @@ img {
 .main_content {
     display: block;
     word-wrap: break-word;
-    background-color: #fff4a2;
+    background-color: #fff4a3;
     position: absolute;
     left: 20%;
     right: 20%;
     z-index: 1;
 }
-.content {
+.text_content {
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;
     font-size: large;
-    padding-left: 25px;
-    padding-right: 25px;
+}
+.about_container {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+    background-color: #bdd2fc;
+    border: solid black 2px
 }
 h2 {
     font-size: xx-large;
@@ -38,6 +45,7 @@ hr.main_content_bar {
     border-style: groove;
     border-width: 5px;
     position: relative;
+    width: 50%;
     left: 25%;
     right: 25%;
 }

@@ -1,1 +1,3 @@
 Hello! My name is Gabriel Bacon, a recent graduate of UCSC in Computer Science: Computer Game Design.
+My main area of expertise resides in creating game systems and tools, with a passion for procedural generation, and I also enjoy UI design and level design.
+I love expanding my knowledge of design practices and techniques, leading me to always have a small project practicing something I want to learn. I also love teaching fellow game developers or anyone who has the same passion for learning.

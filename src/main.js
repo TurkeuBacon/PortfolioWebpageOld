@@ -3,7 +3,13 @@ $(document).ready(function() {
         $.ajax({
             url : "../text_files/about.txt",
             success : function (data) {
-                document.getElementById("about_text").innerHTML = data;
+                const lines = data.split('\n')
+                let aboutHTML = "";
+                for(let i = 0; i < lines.length-1; i++) {
+                    aboutHTML += lines[i] + "<br/><br/>";
+                }
+                aboutHTML += lines[lines.length-1];
+                document.getElementById("about_text").innerHTML = aboutHTML;
             }
         });
     } catch(error) {
