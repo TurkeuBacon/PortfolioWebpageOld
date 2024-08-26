@@ -1,3 +1,10 @@
+let BASE = [location.protocol, "//", location.host].join('');
+if(BASE == "https://turkeubacon.github.io") {
+    console.log("GITHUB");
+    BASE += "/PortfolioWebpage";
+} else {
+    console.log("LOCAL");
+}
 $(document).ready(function() {
     try {
         $.ajax({
